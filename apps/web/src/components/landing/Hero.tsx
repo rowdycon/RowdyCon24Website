@@ -9,60 +9,46 @@ export default function Hero() {
 				<div className="absolute left-[20%] top-[-30vh] h-[110vh] w-[225px] -translate-x-5 -rotate-[50deg] bg-white opacity-20 blur-3xl"></div>
 				<div className="relative">
 					<div className="absolute h-full w-full rounded-3xl bg-hackathon opacity-10 blur-3xl"></div>
-					<div className="z-10 grid h-min grid-cols-2">
-						<div className="relative">
+					<div className="z-10 grid h-min grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-0">
+						<div className="relative w-[250px] h-[250px] md:w-[400px] md:h-[400px]">
 							<Image
-								src="/img/logo/hackkit-md.png"
-								alt="HackKit Logo"
+								src="/img/logo/rowdyconlogo.png"
+								alt="RowdyCon Logo"
 								fill
 								className="object-contain"
 							/>
 						</div>
-						<div className="z-10 flex py-5">
-							<h1 className="text-7xl font-black text-hackathon dark:bg-gradient-to-tl dark:from-hackathon/80 dark:to-white dark:bg-clip-text dark:text-transparent md:text-8xl">
-								Hack
-								<br />
-								Kit
+						<div className="z-10 flex flex-col items-center md:items-start text-center md:text-left space-y-2 md:space-y-3">
+							<h1 className="text-4xl md:text-7xl font-black text-hackathon dark:bg-gradient-to-tl dark:from-hackathon/80 dark:to-white dark:bg-clip-text dark:text-transparent">
+								<span style={{ color: "#ff6347" }}>Nov. 16th</span>
 							</h1>
+							<div className="relative w-[300px] h-[100px] md:w-[500px] md:h-[150px]">
+								<Image
+									src="/img/logo/rowdyconTextLogo.png"
+									alt="RowdyCon Text Logo"
+									fill
+									className="object-contain"
+								/>
+							</div>
+							<p className="text-lg md:text-md font-bold text-muted-foreground">
+								<span style={{ fontSize: "2rem", color: "#ff6347" }}>
+									@ UTSA San Pedro I
+								</span>
+							</p>
 						</div>
 					</div>
-					<p className="text-md pl-5 pt-10 text-center font-bold text-muted-foreground">
-						Feature-packed Hackathon managment software{" "}
-						<u>that just works</u>.
-					</p>
 				</div>
+				<div className="mt-2 flex w-full items-center justify-center"> {/* Reduced margin here */}
+				<Link href={"https://rowdycon.org/register"}>
+					<Button variant={"outline"} size={"lg"} className="px-10 md:px-20 py-5 md:py-10 text-xl md:text-2xl" style={{ backgroundColor: '#ff6347' }}>
+						REGISTER HERE!
+					</Button>
+				</Link>
 			</div>
-			<div className="absolute top-[80vh] flex w-full flex-wrap items-center justify-center gap-x-2 gap-y-4">
-				<Link href={"https://github.com/acmutsa/hackkit"}>
-					<Button variant={"outline"} size={"lg"}>
-						GitHub
-					</Button>
-				</Link>
-				<Link href={"https://github.com/acmutsa/hackkit"}>
-					<Button variant={"outline"} size={"lg"}>
-						Docs
-					</Button>
-				</Link>
-				<Link href={"https://github.com/acmutsa/hackkit"}>
-					<Button variant={"outline"} size={"lg"}>
-						Channel Log
-					</Button>
-				</Link>
-				<div className="h-0 basis-full" />
-				<div className="max-h-[50px] overflow-hidden">
-					<Link
-						href={
-							"https://vercel.com/?utm_source=ACM%20UTSA&utm_campaign=oss"
-						}
-					>
-						<img
-							src="/img/powered-by-vercel.svg"
-							alt="Powered by Vercel"
-							className="overflow-hidden rounded-lg border border-[#5D5D5D] bg-black"
-						/>
-					</Link>
-				</div>
 			</div>
 		</section>
 	);
 }
+
+
+

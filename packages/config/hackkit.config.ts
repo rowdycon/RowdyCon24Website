@@ -1,9 +1,9 @@
 export const defaultTheme = "dark";
 
 export default {
-	hackathonName: "HackKit",
-	itteration: "I",
-	siteUrl: "https://rowdyhacks.org", // Do not have a trailing slash
+	hackathonName: "RowdyCon",
+	itteration: "II",
+	siteUrl: "https://rowdycon.com", // Do not have a trailing slash
 	defaultMetaDataDescription: "Your Metadata Description Here",
 	botName: "HackKit",
 	botParticipantRole: "Participant",
@@ -53,14 +53,16 @@ export default {
 			discordRole: "Guild E Role",
 		},
 	},
-	issueEmail: "team@rowdyhacks.org",
+	issueEmail: "admin@rowdycon.org",
 	links: {
-		discord: "https://go.rowdyhacks.org/discord",
-		instagram: "https://instagram.com/rowdyhacks",
-		facebook: "https://facebook.com/rowdyhacks",
-		twitter: "https://twitter.com/rowdyhacks",
-		github: "https://github.com/acmutsa",
+		//FIX: Make invite link fancy later, insert guide
+		discord: "https://discord.gg/JPWBpEc6",
+		instagram: "https://www.instagram.com/rowdyconutsa/",
+		//facebook: "https://facebook.com/rowdyhacks",
+		//twitter: "https://twitter.com/rowdyhacks",
+		//github: "https://github.com/acmutsa",
 		guide: "https://go.rowdyhacks.org/discord",
+		faq: "https://rowdycon.com/faq"
 	},
 	icon: {
 		sm: "/img/logo/hackkit.svg",
