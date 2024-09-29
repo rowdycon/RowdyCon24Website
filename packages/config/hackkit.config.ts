@@ -60,7 +60,7 @@ export default {
 		instagram: "https://www.instagram.com/rowdyconutsa/",
 		//facebook: "https://facebook.com/rowdyhacks",
 		//twitter: "https://twitter.com/rowdyhacks",
-		//github: "https://github.com/acmutsa",
+		github: "https://github.com/acmutsa",
 		guide: "https://go.rowdyhacks.org/discord",
 		faq: "https://rowdycon.com/faq"
 	},
