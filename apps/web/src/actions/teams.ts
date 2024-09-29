@@ -4,11 +4,11 @@
 
 import { authenticatedAction } from "@/lib/safe-action";
 import { z } from "zod";
-import { db } from "db";
 import { userHackerData, teams, invites } from "db/schema";
 import { eq } from "db/drizzle";
 import { revalidatePath } from "next/cache";
 import { getHacker } from "db/functions";
+import { getWebSocketDb } from "db/functions";
 
 export const leaveTeam = authenticatedAction(
 	z.null(),
@@ -23,8 +23,12 @@ export const leaveTeam = authenticatedAction(
 				message: "User is not on a team",
 			};
 		}
+		let result:{ success: boolean; message: string };
 
-		const result = await db.transaction(async (tx) => {
+		try{
+			const webSocketDb = getWebSocketDb();
+
+		result = await webSocketDb.transaction(async (tx) => {
 			await tx
 				.update(userHackerData)
 				.set({ teamID: null })
@@ -76,6 +80,14 @@ export const leaveTeam = authenticatedAction(
 				message: "Team has been left.",
 			};
 		});
+		}
+		catch(e){
+			console.error(e);
+			return {
+				success: false,
+				message: "An error occurred with websocket",
+			};
+		}
 
 		return result;
 	},

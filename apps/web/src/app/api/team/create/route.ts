@@ -1,6 +1,5 @@
 import { auth } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
-import { db } from "db";
 import { eq } from "db/drizzle";
 import { userHackerData, teams } from "db/schema";
 import { getHacker } from "db/functions";
@@ -8,6 +7,7 @@ import { newTeamValidator } from "@/validators/shared/team";
 import { nanoid } from "nanoid";
 import c from "config";
 import { logError } from "@/lib/utils/server/logError";
+import { getWebSocketDb } from "db/functions";
 
 export async function POST(req: Request) {
 	const { userId } = auth();
@@ -35,9 +35,10 @@ export async function POST(req: Request) {
 	}
 
 	const teamID = nanoid();
-
+	const webSocketDb = getWebSocketDb();
+	
 	try {
-		await db.transaction(async (tx) => {
+		await webSocketDb.transaction(async (tx) => {
 			await tx.insert(teams).values({
 				id: teamID,
 				name: body.data.name,

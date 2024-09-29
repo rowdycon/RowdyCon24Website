@@ -13,7 +13,7 @@ const runMigrations = async () => {
 
 	// TODO: Change this to use t3-env instead of dotenv for type checking
 	const sql = postgres(
-		(process.env.POSTGRES_URL as string) + "?sslmode=require",
+		(process.env.DATABASE_URL as string) + "?sslmode=require",
 		{ max: 1 },
 	);
 	const db = drizzle(sql);
