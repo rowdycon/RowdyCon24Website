@@ -127,14 +127,10 @@ export const userHackerData = pgTable("user_hacker_data", {
 	resume: varchar("resume", { length: 255 })
 		.notNull()
 		.default("https://static.acmutsa.org/No%20Resume%20Provided.pdf"),
-
 	// metadata
 	group: integer("group").notNull(),
 	teamID: varchar("team_id", { length: 50 }),
 	points: integer("points").notNull().default(0),
-	hasAcceptedMLHCoC: boolean("has_accepted_mlh_coc").notNull(),
-	hasSharedDataWithMLH: boolean("has_shared_data_with_mlh").notNull(),
-	isEmailable: boolean("is_emailable").notNull(),
 });
 
 export const userHackerRelations = relations(
