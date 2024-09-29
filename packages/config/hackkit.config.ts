@@ -150,6 +150,7 @@ export default {
 	featureFlags: {
 		core: {
 			requireUsersApproval: false,
+			maxRSVPs: 250
 		},
 	},
 } as const;
