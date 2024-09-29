@@ -47,24 +47,24 @@ export default function Page() {
 						>
 							<Instagram className="text-6xl" />
 						</Link>
-						<Link
+						{/* <Link
 							href={c.links.twitter}
 							className="flex aspect-square items-center justify-center rounded-xl border-2 border-dashed border-[#3E5A31] text-[#3E5A31] transition-all duration-150 hover:border-solid"
 						>
 							<Twitter className="text-6xl" />
-						</Link>
+						</Link> */}
 						<Link
 							href={c.links.github}
 							className="flex aspect-square items-center justify-center rounded-xl border-2 border-dashed border-[#3E5A31] text-[#3E5A31] transition-all duration-150 hover:border-solid"
 						>
 							<Github className="text-6xl" />
 						</Link>
-						<Link
+						{/* <Link
 							href={c.links.facebook}
 							className="flex aspect-square items-center justify-center rounded-xl border-2 border-dashed border-[#3E5A31] text-[#3E5A31] transition-all duration-150 hover:border-solid"
 						>
 							<Facebook className="text-6xl" />
-						</Link>
+						</Link> */}
 					</div>
 					<div className="col-span-4 h-full w-full rounded-xl bg-[#3E5A31]"></div>
 				</div>

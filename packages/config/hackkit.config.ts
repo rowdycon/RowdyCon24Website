@@ -784,7 +784,7 @@ const c = {
 	localUniversityName: schools[0],
 	localUniversitySchoolIDName: "ABC123",
 	localUniversityShortIDMaxLength: 6,
-	registration:{
+	registration: {
 		schools,
 		majors,
 		levelsOfStudy,
@@ -831,9 +831,9 @@ const c = {
 		instagram: "https://www.instagram.com/rowdyconutsa/",
 		//facebook: "https://facebook.com/rowdyhacks",
 		//twitter: "https://twitter.com/rowdyhacks",
-		//github: "https://github.com/acmutsa",
+		github: "https://github.com/rowdycon",
 		guide: "https://go.rowdyhacks.org/discord",
-		faq: "https://rowdycon.com/faq"
+		faq: "https://rowdycon.com/faq",
 	},
 	icon: {
 		sm: "/img/logo/hackkit.svg",
