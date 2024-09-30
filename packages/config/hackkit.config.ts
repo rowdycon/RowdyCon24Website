@@ -1,11 +1,6 @@
 const defaultTheme = "dark";
 
 const schools = [
-		discord: "https://discord.gg/JPWBpEc6",
-		instagram: "https://www.instagram.com/rowdyconutsa/",
-		github: "https://github.com/acmutsa",
-		guide: "https://go.rowdyhacks.org/discord",
-		faq: "https://rowdycon.com/faq"
 	"The University of Texas at San Antonio",
 	"American Heritage School",
 	"American River College, California",
@@ -563,6 +558,7 @@ const dietaryRestrictionOptions = [
 ];
 
 const countries = [
+	{ name: "United States", code: "US" },
 	{ name: "Afghanistan", code: "AF" },
 	{ name: "Albania", code: "AL" },
 	{ name: "Algeria", code: "DZ" },
@@ -745,7 +741,6 @@ const countries = [
 	{ name: "Ukraine", code: "UA" },
 	{ name: "United Arab Emirates", code: "AE" },
 	{ name: "United Kingdom", code: "GB" },
-	{ name: "United States", code: "US" },
 	{ name: "Uruguay", code: "UY" },
 	{ name: "Uzbekistan", code: "UZ" },
 	{ name: "Vanuatu", code: "VU" },
@@ -779,11 +774,9 @@ const raceOptions = [
 ];
 
 const c = {
-	siteUrl: "https://rowdycon.com", // Do not have a trailing slash
-	itteration: "II",
 	hackathonName: "RowdyCon",
-	issueEmail: "admin@rowdycon.org",
-	discord: "https://discord.gg/JPWBpEc6", // Do not have a trailing slash
+	itteration: "II",
+	siteUrl: "https://rowdycon.com",
 	defaultMetaDataDescription: "Your Metadata Description Here",
 	botName: "HackKit",
 	botParticipantRole: "Participant",
@@ -791,7 +784,7 @@ const c = {
 	localUniversityName: schools[0],
 	localUniversitySchoolIDName: "ABC123",
 	localUniversityShortIDMaxLength: 6,
-	registration:{
+	registration: {
 		schools,
 		majors,
 		levelsOfStudy,
@@ -831,14 +824,16 @@ const c = {
 			discordRole: "Guild E Role",
 		},
 	},
-	issueEmail: "team@rowdyhacks.org",
+	issueEmail: "utsarowdycon@gmail.com",
 	links: {
-		discord: "https://go.rowdyhacks.org/discord",
-		instagram: "https://instagram.com/rowdyhacks",
-		facebook: "https://facebook.com/rowdyhacks",
-		twitter: "https://twitter.com/rowdyhacks",
-		github: "https://github.com/acmutsa",
+		//FIX: Make invite link fancy later, insert guide
+		discord: "https://discord.gg/JPWBpEc6",
+		instagram: "https://www.instagram.com/rowdyconutsa/",
+		//facebook: "https://facebook.com/rowdyhacks",
+		//twitter: "https://twitter.com/rowdyhacks",
+		github: "https://github.com/rowdycon",
 		guide: "https://go.rowdyhacks.org/discord",
+		faq: "https://rowdycon.com/faq",
 	},
 	icon: {
 		sm: "/img/logo/hackkit.svg",
@@ -957,13 +952,5 @@ const publicRoutes = [
 
 // Generally it is reccomended to put your primary audience's university at the top of this list.
 
-
-
-
 export default c;
-export {
-	defaultTheme,
-	bucketResumeBaseUploadUrl,
-	perms,
-	publicRoutes,
-};
+export { defaultTheme, bucketResumeBaseUploadUrl, perms, publicRoutes };

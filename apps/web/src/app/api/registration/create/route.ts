@@ -6,7 +6,7 @@ import { userCommonData, userHackerData } from "db/schema";
 import { RegisterFormValidator } from "@/validators/shared/RegisterForm";
 import c from "config";
 import { z } from "zod";
-import { getUser, getUserByTag } from "db/functions";
+import { getUser, getUserByTag,getDbWebSocket } from "db/functions";
 
 export async function POST(req: Request) {
 	const rawBody = await req.json();
@@ -71,7 +71,11 @@ export async function POST(req: Request) {
 		});
 	}
 
-	await db.transaction(async (tx) => {
+	const dbWebSocket = getDbWebSocket();
+
+
+	try{
+		await dbWebSocket.transaction(async (tx) => {
 		await tx.insert(userCommonData).values({
 			clerkID: user.id,
 			firstName: body.firstName,
@@ -115,6 +119,13 @@ export async function POST(req: Request) {
 			isEmailable: body.isEmailable,
 		});
 	});
+	}catch(e){
+		console.error(e);
+		return NextResponse.json({
+			success: false,
+			message: `A websocket error occured. Please contact ${c.issueEmail} if the issue persists.`,
+		});
+	}
 
 	// sendEmail({
 	// 	to: body.email,
