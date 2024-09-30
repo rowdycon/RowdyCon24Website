@@ -30,14 +30,14 @@
         "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY",
         "NEXT_PUBLIC_CLERK_SIGN_IN_URL",
         "NEXT_PUBLIC_CLERK_SIGN_UP_URL",
-        "POSTGRES_DATABASE",
-        "POSTGRES_HOST",
-        "POSTGRES_PASSWORD",
-        "POSTGRES_PRISMA_URL",
-        "POSTGRES_URL",
-        "POSTGRES_URL_NON_POOLING",
-        "POSTGRES_URL_NO_SSL",
-        "POSTGRES_USER"
+        "DATABASE_URL_UNPOOLED",
+        "PGHOST",
+        "PGHOST_UNPOOLED",
+        "DATABASE_URL",
+        "PGPASSWORD",
+        "PGDATABASE",
+        "PGUSER"
+       
       ],
 	"tasks": {
 		"build": {
