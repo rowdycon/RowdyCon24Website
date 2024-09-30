@@ -63,14 +63,6 @@ export async function POST(req: Request) {
 		.select({ count: sql<number>`count(*)`.mapWith(Number) })
 		.from(userCommonData);
 
-	if (!body.hasAcceptedMLHCoC || !body.hasSharedDataWithMLH) {
-		return NextResponse.json({
-			success: false,
-			message:
-				"You must accept the MLH Code of Conduct and Privacy Policy.",
-		});
-	}
-
 	const dbWebSocket = getDbWebSocket();
 
 
@@ -114,9 +106,6 @@ export async function POST(req: Request) {
 			PersonalWebsite: body.personalWebsite,
 			resume: body.resume,
 			group: totalUserCount[0].count % Object.keys(c.groups).length,
-			hasAcceptedMLHCoC: body.hasAcceptedMLHCoC,
-			hasSharedDataWithMLH: body.hasSharedDataWithMLH,
-			isEmailable: body.isEmailable,
 		});
 	});
 	}catch(e){

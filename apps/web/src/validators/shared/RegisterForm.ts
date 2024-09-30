@@ -77,14 +77,6 @@ export const RegisterFormValidator = z.object({
 		message: "Phone number must be less than 15 characters",
 	}),
 	countryOfResidence: z.string().length(2),
-	hasAcceptedMLHCoC: z.boolean().refine((val) => val === true, {
-		message: "You must accept the MLH Code of Conduct.",
-	}),
-	hasSharedDataWithMLH: z.boolean().refine((val) => val === true, {
-		message:
-			"You must accept the MLH Terms & Conditions and Privacy Policy.",
-	}),
-	isEmailable: z.boolean(),
 	university: z.string().min(1).max(200),
 	major: z.string().min(1).max(200),
 	schoolID: z
