@@ -839,7 +839,7 @@ const c = {
 		sm: "/img/logo/hackkit.svg",
 		md: "/img/logo/hackkit-md.png",
 		lg: "/img/logo/hackkit-lg.png",
-		svg: "/img/logo/hackkit.svg",
+		svg: "/img/logo/rowdyconlogo.svg",
 	},
 	dashPaths: {
 		dash: {
