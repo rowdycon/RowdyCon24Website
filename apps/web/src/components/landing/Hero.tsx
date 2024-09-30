@@ -39,7 +39,7 @@ export default function Hero() {
 					</div>
 				</div>
 				<div className="mt-2 flex w-full items-center justify-center"> {/* Reduced margin here */}
-				<Link href={"https://rowdycon.org/register"}>
+				<Link href={"/register"}>
 					<Button variant={"outline"} size={"lg"} className="px-10 md:px-20 py-5 md:py-10 text-xl md:text-2xl" style={{ backgroundColor: '#ff6347' }}>
 						REGISTER HERE!
 					</Button>
