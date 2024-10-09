@@ -827,13 +827,13 @@ const c = {
 	issueEmail: "utsarowdycon@gmail.com",
 	links: {
 		//FIX: Make invite link fancy later, insert guide
-		discord: "https://discord.gg/JPWBpEc6",
+		discord: "https://discord.gg/VMdStE3mpd",
 		instagram: "https://www.instagram.com/rowdyconutsa/",
 		//facebook: "https://facebook.com/rowdyhacks",
 		//twitter: "https://twitter.com/rowdyhacks",
 		github: "https://github.com/rowdycon",
-		guide: "https://go.rowdyhacks.org/discord",
-		faq: "https://rowdycon.com/faq",
+		guide: "https://rowdycon.notion.site/Guide-56f8318aeea7461bac459ae3fbc02273",
+		faq: "/faq",
 	},
 	icon: {
 		sm: "/img/logo/hackkit.svg",
