@@ -47,7 +47,8 @@ export default function Hero() {
 						</div>
 					</div>
 				</div>
-				<div className="mt-2 flex w-full items-center justify-center">
+				{/*old mt-2 flex w-full items-center justify-center */}
+				<div className="mt-2 flex flex-col w-full items-center justify-center space-y-4">
 					{" "}
 					{/* Reduced margin here */}
 					<Suspense
@@ -67,8 +68,6 @@ export default function Hero() {
 						<LandingButton />
 					</Suspense>
 
-					{/* Horizontal line between buttons */}
-  					<hr className="w-3/4 border-t-2 border-gray-300" />
 
 					{/* CFW Button. Remove when closed. */}
 					<Link href={"https://forms.gle/VFUZ25dLLn9UsWkt6"}>
