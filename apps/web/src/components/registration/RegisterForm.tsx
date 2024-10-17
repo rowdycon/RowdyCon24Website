@@ -727,7 +727,7 @@ export default function RegisterForm({ defaultEmail }: RegisterFormProps) {
 							/>
 						</div>
 					</FormGroupWrapper>
-					<FormGroupWrapper title="Hackathon Experience">
+					<FormGroupWrapper title="Modality & Experience">
 						<div className="grid grid-cols-1 gap-x-2 gap-y-2 md:grid-cols-3 md:gap-y-0">
 							<FormField
 								control={form.control}
@@ -735,7 +735,7 @@ export default function RegisterForm({ defaultEmail }: RegisterFormProps) {
 								render={({ field }) => (
 									<FormItem>
 										<FormLabel>
-											# of Hackathons Attended
+											Enter #47 if attending online or any other positive number if in-person.
 										</FormLabel>
 										<FormControl>
 											<Input type="number" {...field} />
@@ -750,7 +750,7 @@ export default function RegisterForm({ defaultEmail }: RegisterFormProps) {
 								render={({ field }) => (
 									<FormItem>
 										<FormLabel>
-											Software Building Experience
+											Cyber Experience
 										</FormLabel>
 										<Select
 											onValueChange={field.onChange}

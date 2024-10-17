@@ -47,7 +47,7 @@ export default function Hero() {
 						</div>
 					</div>
 				</div>
-				{/*old mt-2 flex w-full items-center justify-center */}
+				{/*old, change it to this when removing the CFW button after it closes: mt-2 flex w-full items-center justify-center */}
 				<div className="mt-2 flex flex-col w-full items-center justify-center space-y-4">
 					{" "}
 					{/* Reduced margin here */}
