@@ -68,22 +68,16 @@ export default function Hero() {
 					</Suspense>
 
 					{/* This is what was inserted. Remove if wron */}
-					<Suspense
-						fallback={
-							<Link href={"https://forms.gle/VFUZ25dLLn9UsWkt6"}>
-								<Button
-									variant={"outline"}
-									size={"lg"}
-									className="px-10 py-5 text-xl md:px-20 md:py-10 md:text-2xl"
-									style={{ backgroundColor: "#ff6347" }}
-								>
-									Present a Workshop
-								</Button>
-							</Link>
-						}
-					>
-						<LandingButton />
-					</Suspense>
+					<Link href={"https://forms.gle/VFUZ25dLLn9UsWkt6"}>
+						<Button
+							variant={"outline"}
+							size={"lg"}
+							className="px-10 py-5 text-xl md:px-20 md:py-10 md:text-2xl"
+							style={{ backgroundColor: "#ff6347" }}
+						>
+							Present a Workshop
+						</Button>
+					</Link>
 				</div>
 			</div>
 		</section>
