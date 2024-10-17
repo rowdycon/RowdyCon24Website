@@ -56,6 +56,11 @@ const faqs: FAQ[] = [
     )
   },
   {
+    question: "What if I can't attend in-person?",
+    answer:
+      "All good! We have certain events available online. The CTF will also be fully available online. If you win/place, we can ship your prize to you! Make sure to enter number 47 on the registration form to note you are attending online." 
+  },
+  {
     question: "What is the event schedule and what time should I show up?",
     answer:
 	  (

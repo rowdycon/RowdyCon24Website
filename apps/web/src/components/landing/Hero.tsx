@@ -41,7 +41,7 @@ export default function Hero() {
 										color: "#ff6347",
 									}}
 								>
-									@ UTSA San Pedro I
+									@ UTSA San Pedro I and Online
 								</span>
 							</p>
 						</div>
