@@ -67,7 +67,7 @@ export default function Hero() {
 						<LandingButton />
 					</Suspense>
 
-					{/* This is what was inserted. Remove if wrong. */}
+					{/* This is what was inserted. Remove if wron */}
 					<Suspense
 						fallback={
 							<Link href={"https://forms.gle/VFUZ25dLLn9UsWkt6"}>
