@@ -67,7 +67,10 @@ export default function Hero() {
 						<LandingButton />
 					</Suspense>
 
-					{/* This is what was inserted. Remove if wron */}
+					{/* Horizontal line between buttons */}
+  					<hr className="w-3/4 border-t-2 border-gray-300" />
+
+					{/* CFW Button. Remove when closed. */}
 					<Link href={"https://forms.gle/VFUZ25dLLn9UsWkt6"}>
 						<Button
 							variant={"outline"}
