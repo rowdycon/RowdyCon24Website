@@ -17,7 +17,7 @@ const faqs: FAQ[] = [
     answer:
 	  (
 		<>
-		  RowdyCon is open to all San Antonio-based students, regardless of major or skill level. We welcome anyone interested in learning more about cybersecurity. We have workshops and opportunities accessible for every level including beginners! Volunteers not fitting those qualifications are welcomed and can sign up{" "}
+		  RowdyCon is open to all students attending San Antonio-based universities and colleges, regardless of major or skill level. If you attend an online degree program that is based in San Antonio, you are eligible to participate. We welcome anyone interested in learning more about cybersecurity. We have workshops and opportunities accessible for every level including beginners! Volunteers not fitting those qualifications are welcomed and can sign up{" "}
 		  <a href="https://forms.gle/G8t8UQxiQLGbFLVE9" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
 			here
 		  </a>
