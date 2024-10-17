@@ -725,7 +725,7 @@ export default function RegisterForm({ defaultEmail }: RegisterFormProps) {
 									</FormItem>
 								)}
 							/>
-						</div>
+						</div> {/* */}
 					</FormGroupWrapper>
 					<FormGroupWrapper title="Modality & Experience">
 						<div className="grid grid-cols-1 gap-x-2 gap-y-2 md:grid-cols-3 md:gap-y-0">
