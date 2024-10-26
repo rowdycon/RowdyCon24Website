@@ -13,7 +13,7 @@ export default function Page() {
 			{/* Image */}
 			<Image
 				src="/img/logo/RowdyCon Flier.png"
-				alt="RowdyCon Flier"
+				alt="RowdyCon Flyer"
 				width={800} // Adjust size as needed
 				height={1200}
 				className="rounded-lg shadow-lg"
