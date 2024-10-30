@@ -29,6 +29,13 @@
 			"logo": "Delta Quadrant Solutions Png.png",
 			"url": "",
 			"tier": "Sentinel"
+		},
+		{
+			"name": "UTSA School of Data Science",
+			"logo": "School of Data Science Logo.png",
+			"url": "",
+			"tier": "Sentinel"
 		}
+
 	]
 }
