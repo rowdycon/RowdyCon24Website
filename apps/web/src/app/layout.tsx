@@ -3,6 +3,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { cookies } from "next/headers";
 import { Analytics } from "@vercel/analytics/react";
 import { defaultTheme } from "config";
+import Head from "next/head";
 
 export default function RootLayout({
 	children,
@@ -12,6 +13,9 @@ export default function RootLayout({
 	const theme = cookies().get("hk_theme")?.value || defaultTheme;
 	return (
 		<ClerkProvider>
+			<Head>
+				<title>RowdyCon - Cybersecurity Conference</title>
+			</Head>
 			<html lang="en">
 				<body className={theme === "dark" ? "dark" : ""}>
 					{children}
