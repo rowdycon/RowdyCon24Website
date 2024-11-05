@@ -1,12 +1,6 @@
 {
 	"partners": [
 		{
-			"name": "UTSA Honors College",
-			"logo": "UTSA Honors College.png",
-			"url": "https://honors.utsa.edu",
-			"tier": "Sentinel"
-		},
-		{
 			"name": "Alamo ISSA",
 			"logo": "Alamo ISSA.png",
 			"url": "https://alamoissa.org",
@@ -40,6 +34,12 @@
 			"name": "CyberTexas Foundation",
 			"logo": "cybertexas logo.png",
 			"url": "",
+			"tier": "Sentinel"
+		},
+		{
+			"name": "UTSA Honors College",
+			"logo": "UTSA Honors College.png",
+			"url": "https://honors.utsa.edu",
 			"tier": "Sentinel"
 		}
 
