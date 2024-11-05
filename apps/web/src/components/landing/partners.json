@@ -32,7 +32,13 @@
 		},
 		{
 			"name": "UTSA School of Data Science",
-			"logo": "School of Data Science Logo.jpg",
+			"logo": "utsa_sds.svg",
+			"url": "",
+			"tier": "Sentinel"
+		},
+		{
+			"name": "CyberTexas Foundation",
+			"logo": "cybertexas logo.png",
 			"url": "",
 			"tier": "Sentinel"
 		}
