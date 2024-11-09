@@ -8,7 +8,7 @@ import { userHackerData, teams, invites } from "db/schema";
 import { eq } from "db/drizzle";
 import { revalidatePath } from "next/cache";
 import { getDbWebSocket, getHacker } from "db/functions";
-
+import { returnValidationErrors } from "next-safe-action";
 export const leaveTeam = authenticatedAction
 	.outputSchema(
 		z.object({

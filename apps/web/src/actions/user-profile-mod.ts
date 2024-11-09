@@ -60,7 +60,6 @@ export const modifyRegistrationData = authenticatedAction
 				db
 					.update(userHackerData)
 					.set({
-						isEmailable,
 						university,
 						major,
 						levelOfStudy,
