@@ -141,6 +141,13 @@
       "when": 1727677791518,
       "tag": "0019_oval_makkari",
       "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1731309122847,
+      "tag": "0020_unknown_kate_bishop",
+      "breakpoints": true
     }
   ]
 }

@@ -88,6 +88,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
 								.slice(1)
 								.join(" ")}
 						</Badge>
+						<Badge className={`no-select ${user.isRSVPed ? 'text-green-600': 'text-red-500'}`}>
+							{user.isRSVPed ? "RSVPed" : "Not RSVPed"}
+							</Badge>
 					</div>
 				</div>
 				<div className="col-span-2 overflow-x-hidden">

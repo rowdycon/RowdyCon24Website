@@ -1,5 +1,6 @@
 import CheckinScanner from "@/components/admin/scanner/CheckinScanner";
 import { getUser } from "db/functions";
+import { unstable_noStore as noStore} from "next/cache"
 
 export default async function Page({
 	searchParams,
@@ -17,9 +18,10 @@ export default async function Page({
 				/>
 			</div>
 		);
-
+	noStore();
 	const scanUser = await getUser(searchParams.user);
-	if (!scanUser)
+	console.log(scanUser);
+	if (!scanUser) {
 		return (
 			<div>
 				<CheckinScanner
@@ -30,6 +32,7 @@ export default async function Page({
 				/>
 			</div>
 		);
+	}
 
 	return (
 		<div>

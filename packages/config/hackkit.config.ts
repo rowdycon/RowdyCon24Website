@@ -806,7 +806,7 @@ const c = {
 			discordRole: "Guild B Role",
 		},
 		"Guild C | Group A": {
-			discordRole: "Guild C Role	",
+			discordRole: "Guild C Role",
 		},
 		"Guild C | Group B": {
 			discordRole: "Guild C Role",
@@ -854,7 +854,7 @@ const c = {
 			Users: "/admin/users",
 			Events: "/admin/events",
 			Points: "/admin/points",
-			"Check-in": "/admin/check-in",
+			"Hackathon Check-in": "/admin/check-in",
 			Toggles: "/admin/toggles",
 		},
 		// TODO: Can remove days? Pretty sure they're dynamic now.
