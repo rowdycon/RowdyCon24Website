@@ -72,6 +72,20 @@ export default function Hero() {
 							Present a Workshop
 						</Button>
 					</Link>*/}
+
+					{/* CTF Button. Remove when closed. */}
+					<Link href={"https://ctf.rowdycon.org"}>
+						<Button
+							variant={"outline"}
+							size={"lg"}
+							className="px-10 py-5 text-xl md:px-20 md:py-10 md:text-2xl"
+							style={{ backgroundColor: "#ff6347" }}
+						>
+							Sign up for the CTF!
+						</Button>
+					</Link>
+
+
 				</div>
 			</div>
 		</section>
