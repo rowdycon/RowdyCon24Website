@@ -81,7 +81,7 @@ export default function Hero() {
 							className="px-10 py-5 text-xl md:px-20 md:py-10 md:text-2xl"
 							style={{ backgroundColor: "#ff6347" }}
 						>
-							Sign up for the CTF!
+							Go to the CTF!
 						</Button>
 					</Link>
 
