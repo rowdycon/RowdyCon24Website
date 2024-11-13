@@ -61,6 +61,7 @@ export default function Hero() {
 						<LandingButton />
 					</Suspense>
 					{/* CFW Button. Remove when closed. */}
+					{/*}
 					<Link href={"https://forms.gle/VFUZ25dLLn9UsWkt6"}>
 						<Button
 							variant={"outline"}
@@ -70,7 +71,7 @@ export default function Hero() {
 						>
 							Present a Workshop
 						</Button>
-					</Link>
+					</Link>*/}
 				</div>
 			</div>
 		</section>
