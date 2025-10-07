@@ -20,7 +20,7 @@ export default function Hero() {
 						</div>
 						<div className="z-10 flex flex-col items-center md:items-start text-center md:text-left space-y-2 md:space-y-3">
 							<h1 className="text-4xl md:text-7xl font-black text-hackathon dark:bg-gradient-to-tl dark:from-hackathon/80 dark:to-white dark:bg-clip-text dark:text-transparent">
-								<span style={{ color: "#ff6347" }}>April 11th, 2026</span>
+								<span style={{ color: "#ff6347" }}>Apr. 11th</span>
 							</h1>
 							<div className="relative w-[300px] h-[100px] md:w-[500px] md:h-[150px]">
 								<Image
