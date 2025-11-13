@@ -4,6 +4,7 @@ import { Button } from "../shadcn/ui/button";
 import { Suspense } from "react";
 import LandingButton from "./LandingButton";
 import { Skeleton } from "../shadcn/ui/skeleton";
+
 export default function Hero() {
 	return (
 		<section className="grid w-full grid-cols-1 overflow-hidden">
